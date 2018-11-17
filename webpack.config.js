@@ -7,8 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'bundle.js',
-    library: 'GlobeController'
+    filename: 'bundle.js'
   },
   devServer: {
     contentBase: './dist/'

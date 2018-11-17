@@ -1,4 +1,4 @@
-# climate
+# Earthstrike visualization
 
 ## Installation
 ``` bash
