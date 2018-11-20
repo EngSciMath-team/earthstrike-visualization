@@ -4,8 +4,8 @@ import PolygonLayer from './globe/PolygonLayer.js'
 import mapActions from './actions/mapActions.js'
 
 Promise.all([
-  d3.json('static/110m.json'),
-  d3.tsv('static/110m.tsv')
+  d3.json('static/json/110m.json'),
+  d3.tsv('static/csv/110m.tsv')
 ]).then(main)
 
 function main ([countries, countryNames]) {
