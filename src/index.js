@@ -5,10 +5,11 @@ import mapActions from './actions/mapActions.js'
 
 Promise.all([
   d3.json('static/json/110m.json'),
-  d3.tsv('static/csv/110m.tsv')
+  d3.tsv('static/csv/110m.tsv'),
+  d3.csv('static/csv/population-centers.csv')
 ]).then(main)
 
-function main ([countries, countryNames]) {
+function main ([countries, countryNames, populationCenters]) {
   const globe = new Globe({
     container: '#globe-container',
     width: window.innerWidth / 2,
