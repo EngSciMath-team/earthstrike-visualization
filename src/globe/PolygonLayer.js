@@ -4,6 +4,7 @@ import applyStyle from './utils/applyStyle.js'
 
 export default class PolygonLayer extends Layer {
   draw (style) {
+    this.drawn = true
     this.geometries = this.g.selectAll('path')
       .data(this.features)
       .enter().append('path')
@@ -33,6 +34,8 @@ export default class PolygonLayer extends Layer {
   }
 
   update () {
-    this.geometries.attr('d', this.parent.path)
+    if (this.drawn) {
+      this.geometries.attr('d', this.parent.path)
+    }
   }
 }

@@ -16,7 +16,32 @@ export default class Layer {
       this.features = geojson.features
     }
 
-    // TODO add other files?
+    // If a csv file is passed
+    if (options.type === 'csv') {
+      this.features = []
+      options.file.forEach((row, i) => {
+        let x = +row[options.x ? options.x : 'x']
+        let y = +row[options.y ? options.y : 'y']
+
+        let properties = {}
+
+        if (options.properties) {
+          for (let property of options.properties) {
+            properties[property] = row[property]
+          }
+        }
+
+        this.features.push({
+          type: 'Feature',
+          id: i.toString(),
+          geometry: {
+            type: 'Point',
+            coordinates: [x, y]
+          },
+          properties
+        })
+      })
+    }
 
     // Add attribute data
     if (options.attributes) {
