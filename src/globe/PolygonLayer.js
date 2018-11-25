@@ -16,6 +16,10 @@ export default class PolygonLayer extends Layer {
     }
   }
 
+  undraw () {
+    this.g.selectAll('path').remove()
+  }
+
   setStyle (style) {
     this.style = style
     applyStyle(this.geometries, style)

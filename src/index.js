@@ -6,12 +6,13 @@ import mapActions from './actions/mapActions.js'
 
 Promise.all([
   d3.json('static/json/110m.json'),
-  d3.tsv('static/csv/110m.tsv')
+  d3.tsv('static/csv/110m.tsv'),
+  d3.json('static/json/population-centers.geojson')
 ]).then(main)
 
-function main ([countries, countryNames]) {
+function main ([countries, countryNames, popCenters]) {
   const globe = new Globe({
-    container: '#globe-container',
+    svg: '#globe',
     width: window.innerWidth / 2,
     height: window.innerHeight,
     scale: 300,
@@ -30,7 +31,13 @@ function main ([countries, countryNames]) {
     nameAttribute: 'sovereignt'
   })
 
+  const populationLayer = new PolygonLayer({
+    type: 'geojson',
+    file: popCenters
+  })
+
   globe.add(countriesLayer)
+  globe.add(populationLayer)
 
   countriesLayer.draw({
     attr: {
@@ -42,7 +49,8 @@ function main ([countries, countryNames]) {
 
   let context = {
     globe,
-    countriesLayer
+    countriesLayer,
+    populationLayer
   }
 
   mapActions(context)

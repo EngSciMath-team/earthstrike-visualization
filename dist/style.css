@@ -80,6 +80,13 @@ h1 {
   100% { fill: #b5bece; }
 }
 
+.population-centers {
+  fill: red;
+  stroke-width: 1px;
+  opacity: 0.5;
+  filter: url(#glow);
+}
+
 .clickable-action {
   text-align: center;
   color: #878cb0;

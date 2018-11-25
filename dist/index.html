@@ -7,7 +7,17 @@
 
     <div id="page">
 
-      <div id="globe-container"></div>
+      <div id="globe-container">
+        <svg id="globe">
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </svg>
+      </div>
 
       <div id="text-container">
         <div class="title">
@@ -30,6 +40,14 @@
 
         <div action-click="unHighlightUS" class="clickable-action">
           Un-highlight US!
+        </div>
+
+        <div action-click="showWorldPop" class="clickable-action">
+          Show populated areas!
+        </div>
+
+        <div action-click="hideWorldPop" class="clickable-action">
+          Hide populated areas!
         </div>
 
       </div>

@@ -16,6 +16,12 @@ export default class Layer {
       this.features = geojson.features
     }
 
+    // If a geojson file is passed
+    if (options.type === 'geojson') {
+      let file = options.file
+      this.features = file.features
+    }
+
     // If a csv file is passed
     if (options.type === 'csv') {
       this.features = []

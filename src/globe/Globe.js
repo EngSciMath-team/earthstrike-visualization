@@ -17,8 +17,7 @@ export default class Globe {
     this._updateProjection()
 
     // Initialize SVG container
-    this.svg = d3.select(options.container)
-      .append('svg')
+    this.svg = d3.select(options.svg)
       .attr('width', this.width)
       .attr('height', this.height)
 

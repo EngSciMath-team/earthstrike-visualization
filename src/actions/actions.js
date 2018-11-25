@@ -43,9 +43,31 @@ const unHighlightUS = new Action({
   }
 })
 
+const showWorldPop = new Action({
+  trigger: 'click',
+  id: 'showWorldPop',
+  func: ({ populationLayer }) => {
+    populationLayer.draw({
+      attr: {
+        class: 'population-centers'
+      }
+    })
+  }
+})
+
+const hideWorldPop = new Action({
+  trigger: 'click',
+  id: 'hideWorldPop',
+  func: ({ populationLayer }) => {
+    populationLayer.undraw()
+  }
+})
+
 export default [
   zoomToAustralia,
   zoomToStartPosition,
   highlightUS,
-  unHighlightUS
+  unHighlightUS,
+  showWorldPop,
+  hideWorldPop
 ]

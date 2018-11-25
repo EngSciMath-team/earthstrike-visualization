@@ -18,6 +18,10 @@ export default class PointLayer extends Layer {
     }
   }
 
+  undraw () {
+    this.g.selectAll('circle').remove()
+  }
+
   setStyle (style) {
     this.style = style
     applyStyle(this.geometries, style)
