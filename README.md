@@ -1,6 +1,6 @@
-# Earthstrike visualization
+# Six degrees visualization
 
-Check out the [data repo (WIP)](https://github.com/EngSciMath-team/earthstrike-data) too!
+Check out the [data repo (WIP)](https://github.com/EngSciMath-team/six-degrees-data) too!
 
 ## Installation
 Install:
@@ -25,7 +25,7 @@ Right now, the first and main visualization is a spinning globe that can respond
 By the way- none of this is definite, so feel free to suggest changes to the approach. This is just a summary of what has been agreed upon so far.
 
 ## What is to be done?
-- The [data repo](https://github.com/EngSciMath-team/earthstrike-data) contains some potentially useful datasets and scripts that are used to pre-process raw datasets to make them more browser friendly. Some of the raw datasets are small and can just be shared through GitHub, but some larger datasets (like 300mb raster GIS data) need to be shared in some other way. One possible solution to share the bigger files is to use a [Makefile](https://en.wikipedia.org/wiki/Makefile) that automatically downloads the data that you are interested in from the appropriate source. Unfortunately, not all datasets are available by direct download links, or require logging in etc. So where possible we will put the direct download link in the Makefile, but for some datasets it would be more convenient to host them ourselves, and provide a direct download link to our own server/API. This hosting will hopefully be set up in the next couple of days (after the holidays).
+- The [data repo](https://github.com/EngSciMath-team/six-degrees-data) contains some potentially useful datasets and scripts that are used to pre-process raw datasets to make them more browser friendly. Some of the raw datasets are small and can just be shared through GitHub, but some larger datasets (like 300mb raster GIS data) need to be shared in some other way. One possible solution to share the bigger files is to use a [Makefile](https://en.wikipedia.org/wiki/Makefile) that automatically downloads the data that you are interested in from the appropriate source. Unfortunately, not all datasets are available by direct download links, or require logging in etc. So where possible we will put the direct download link in the Makefile, but for some datasets it would be more convenient to host them ourselves, and provide a direct download link to our own server/API. This hosting will hopefully be set up in the next couple of days (after the holidays).
 
 - I am currently working on a summary of the six degrees book (see the `literature` folder). With this summary we can have a good overview of the categories of disasters that will occur at different degrees increase of average global temperature.
 
@@ -39,6 +39,6 @@ By the way- none of this is definite, so feel free to suggest changes to the app
   - code the visualizations
 
 
-- Again: if you have any ideas, find read papers, or stumple upon relevant datasets: post it in the `#climate-coalition-dev` channel, save it to the `literature/links.txt` file and make a PR, or add it to the datasets folder or Makefile in the [data repo](https://github.com/EngSciMath-team/earthstrike-data).
+- Again: if you have any ideas, find read papers, or stumple upon relevant datasets: post it in the `#climate-coalition-dev` channel, save it to the `literature/links.txt` file and make a PR, or add it to the datasets folder or Makefile in the [data repo](https://github.com/EngSciMath-team/six-degrees-data).
 
 ☭☭☭☭☭

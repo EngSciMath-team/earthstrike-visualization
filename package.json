@@ -1,5 +1,5 @@
 {
-  "name": "earthstrike-visualization",
+  "name": "six-degrees-visualization",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
