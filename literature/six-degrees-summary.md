@@ -115,3 +115,21 @@ Tepuis are rock platforms in Venezuela filled with unique species that occur now
 Over 30 degrees, rice, wheat and maize become 10% less productive for every degree higher. At 40 degrees, yields are zero. This will lead to a structural famine, accompanied by conflict, refugees and societal collapse.
 
 ### 4 degrees
+
+**Death on the Nile**
+
+In a four degree world, 1.5 million inhabitants of Alexandria will be displaced by rising sea levels. The damage done by the sea swallowing the city is estimated to be 35 billion dollars. Millions more in the Nile delta will be evicted, not to mention 1/3 of Bangladesh, cities like Boston, Shanghai and Mumbai. Island nations like Fiji or Barbados are most at risk. If the ice sheets of Antarctica melt slowly, there might be enough time for mitigation, but if there is a tipping point, there won't be time for that.
+
+**The heart of Antarctica**
+
+The last time the world was on average four degrees hotter, there was no ice at either poles. This might happen again.
+
+**Capitalism with Chinese characteristics**
+
+One fifth of species in China are now threatened with extinction, and three quarters of lakes in China are polluted. With the current increase in living standards and population growth, Chinese will need 100 million barrels of oil per day, while current global production is only 80 million. Once more than three degrees is reached, China's agricultural production will collapse. Similar things will happen to many other 'breadbowls' around the world. While some areas in Siberia might open up temperature wise, they lack the necessary rainfall to be utilised effectively for agriculture to compensate for the collapse of other global argicultural areas.
+
+**The sands of Europe**
+
+The deserts of North Africa might spread upwards as far as France or southern Ukraine. Snowfall will disappear almost entirely (only some parts in Scandinavia will be saved).
+
+**Into thin air**
